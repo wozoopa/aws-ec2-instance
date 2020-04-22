@@ -22,7 +22,7 @@ You can use this in your Terraform templates with the following steps:
 1.) Add a module resource to your template, e.g. `main.tf`
 ```
 module "ec2_instance" {
-  source              = "git::https://.../aws-ec2-instance.git"
+  source              = "git::https://github.com/wozoopa/aws-ec2-instance.git"
   instance_name       = "web1"
   instance_type       = "t2.micro"
   subnet_id           = "subnet-1234565a"
